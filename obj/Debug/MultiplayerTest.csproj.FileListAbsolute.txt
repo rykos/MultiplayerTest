@@ -1,0 +1,15 @@
+C:\Users\rykos\Documents\Visual Studio 2017\Projects\MultiplayerTest\MultiplayerTest\bin\Debug\MultiplayerTest.exe.config
+C:\Users\rykos\Documents\Visual Studio 2017\Projects\MultiplayerTest\MultiplayerTest\bin\Debug\MultiplayerTest.exe
+C:\Users\rykos\Documents\Visual Studio 2017\Projects\MultiplayerTest\MultiplayerTest\bin\Debug\MultiplayerTest.pdb
+C:\Users\rykos\Documents\Visual Studio 2017\Projects\MultiplayerTest\MultiplayerTest\obj\Debug\MultiplayerTest.csprojAssemblyReference.cache
+C:\Users\rykos\Documents\Visual Studio 2017\Projects\MultiplayerTest\MultiplayerTest\obj\Debug\MainWindow.g.cs
+C:\Users\rykos\Documents\Visual Studio 2017\Projects\MultiplayerTest\MultiplayerTest\obj\Debug\App.g.cs
+C:\Users\rykos\Documents\Visual Studio 2017\Projects\MultiplayerTest\MultiplayerTest\obj\Debug\MultiplayerTest_MarkupCompile.cache
+C:\Users\rykos\Documents\Visual Studio 2017\Projects\MultiplayerTest\MultiplayerTest\obj\Debug\MultiplayerTest_MarkupCompile.lref
+C:\Users\rykos\Documents\Visual Studio 2017\Projects\MultiplayerTest\MultiplayerTest\obj\Debug\MainWindow.baml
+C:\Users\rykos\Documents\Visual Studio 2017\Projects\MultiplayerTest\MultiplayerTest\obj\Debug\MultiplayerTest.g.resources
+C:\Users\rykos\Documents\Visual Studio 2017\Projects\MultiplayerTest\MultiplayerTest\obj\Debug\MultiplayerTest.Properties.Resources.resources
+C:\Users\rykos\Documents\Visual Studio 2017\Projects\MultiplayerTest\MultiplayerTest\obj\Debug\MultiplayerTest.csproj.GenerateResource.cache
+C:\Users\rykos\Documents\Visual Studio 2017\Projects\MultiplayerTest\MultiplayerTest\obj\Debug\MultiplayerTest.csproj.CoreCompileInputs.cache
+C:\Users\rykos\Documents\Visual Studio 2017\Projects\MultiplayerTest\MultiplayerTest\obj\Debug\MultiplayerTest.exe
+C:\Users\rykos\Documents\Visual Studio 2017\Projects\MultiplayerTest\MultiplayerTest\obj\Debug\MultiplayerTest.pdb

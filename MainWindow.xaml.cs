@@ -12,17 +12,53 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
 
 namespace MultiplayerTest
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private bool ValidIP(string ipText)
+        {
+            string[] ipBytes = ipText.Split('.');
+            if(ipBytes.Count() == 4)
+            {
+                foreach (string ipByte in ipBytes)
+                {
+                    if (!byte.TryParse(ipByte, out byte byteResult))
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private void ConnectButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (ValidIP(IPTextBox.Text))
+            {
+                Client client = new Client(NameTextBox.Text);
+                client.Connect(IPTextBox.Text);
+            }
+            else
+            {
+                MessageBox.Show("Invalid ip");
+            }
+        }
+
+        private void HostButton_Click(object sender, RoutedEventArgs e)
+        {
+            Server server = new Server(NameTextBox.Text);
         }
     }
 }

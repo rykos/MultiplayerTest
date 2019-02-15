@@ -14,13 +14,11 @@ using System.Windows.Shapes;
 
 namespace MultiplayerTest
 {
-    /// <summary>
-    /// Interaction logic for GamePage.xaml
-    /// </summary>
     public partial class GamePage : Window
     {
         public GamePage()
         {
+            Game.page = this;
             InitializeComponent();
         }
     }

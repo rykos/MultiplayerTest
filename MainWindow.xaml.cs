@@ -47,6 +47,7 @@ namespace MultiplayerTest
         {
             if (ValidIP(IPTextBox.Text))
             {
+                OpenGame();
                 Client client = new Client(NameTextBox.Text);
                 client.Connect(IPTextBox.Text);
             }
@@ -58,7 +59,17 @@ namespace MultiplayerTest
 
         private void HostButton_Click(object sender, RoutedEventArgs e)
         {
+            OpenGame();
             Server server = new Server(NameTextBox.Text);
+            server.CreateGame();
+            server.OpenLobby();
+        }
+
+        private void OpenGame()
+        {
+            Window gamePage = new GamePage();
+            gamePage.Show();
+            this.Close();
         }
     }
 }

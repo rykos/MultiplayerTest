@@ -13,3 +13,5 @@ C:\Users\rykos\Documents\Visual Studio 2017\Projects\MultiplayerTest\Multiplayer
 C:\Users\rykos\Documents\Visual Studio 2017\Projects\MultiplayerTest\MultiplayerTest\obj\Debug\MultiplayerTest.csproj.CoreCompileInputs.cache
 C:\Users\rykos\Documents\Visual Studio 2017\Projects\MultiplayerTest\MultiplayerTest\obj\Debug\MultiplayerTest.exe
 C:\Users\rykos\Documents\Visual Studio 2017\Projects\MultiplayerTest\MultiplayerTest\obj\Debug\MultiplayerTest.pdb
+C:\Users\rykos\Documents\Visual Studio 2017\Projects\MultiplayerTest\MultiplayerTest\obj\Debug\GamePage.g.cs
+C:\Users\rykos\Documents\Visual Studio 2017\Projects\MultiplayerTest\MultiplayerTest\obj\Debug\GamePage.baml

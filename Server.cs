@@ -26,6 +26,8 @@ namespace MultiplayerTest
         public void CreateGame()
         {
             this.game = new Game();
+            game.SpawnCharacter();
+            game.EnableGame();
         }
 
         private void StartAcceptingUsers()

@@ -52,20 +52,47 @@ namespace MultiplayerTest
                 {
                     elapsedFrames--;
                     //
-                    Player player = players[0];
-                    player.Position += new Vector(1,1);
-                    page.Dispatcher.Invoke(() => 
+                    foreach (Player player in players)
                     {
-                        Canvas.SetLeft(player.Avatar, player.Position.x);
-                    });
+                        page.Dispatcher.Invoke(() =>
+                        {
+                            UpdatePlayerPosition(player);
+                        });
+                    }
+                    //
+                    if (GamePage.Pressed(System.Windows.Input.Key.W))
+                    {
+                        players[0].Position += new Vector(0, 1);
+                    }
+                    else if (GamePage.Pressed(System.Windows.Input.Key.S))
+                    {
+                        players[0].Position += new Vector(0, -1);
+                    }
+                    else if (GamePage.Pressed(System.Windows.Input.Key.A))
+                    {
+                        players[0].Position += new Vector(-1, 0);
+                    }
+                    else if (GamePage.Pressed(System.Windows.Input.Key.D))
+                    {
+                        players[0].Position += new Vector(1, 0);
+                    }
                 }
+            }
+        }
+
+        private void UpdatePlayerPosition(Player player)
+        {
+            if (!player.PositionUpdated)
+            {
+                player.PositionUpdated = true;
+                Canvas.SetLeft(player.Avatar, player.Position.x);
+                Canvas.SetBottom(player.Avatar, player.Position.y);
             }
         }
 
         private void TimerTick(object sender, EventArgs e)
         {
             elapsedFrames++;
-            Debug.WriteLine(elapsedFrames);
         }
 
         private void QuitGame()
@@ -78,7 +105,20 @@ namespace MultiplayerTest
     {
         public string Name;
         public Rectangle Avatar;
-        public Vector Position;
+        public Vector Position
+        {
+            get
+            {
+                return this.position;
+            }
+            set
+            {
+                this.position = value;
+                this.PositionUpdated = false;
+            }
+        }
+        private Vector position;
+        public bool PositionUpdated = true; 
 
         ~Player()
         {
